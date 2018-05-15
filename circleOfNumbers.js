@@ -1,0 +1,14 @@
+// Consider integer numbers from 0 to n - 1 written down along the circle in such a way that the distance 
+// between any two neighbouring numbers is equal (note that 0 and n - 1 are neighbouring, too).
+
+// Given n and firstNumber, find the number which is written in the radially opposite position to firstNumber.
+
+const circleOfNumbers = (n, firstNumber) => {
+    if ( n/2 > firstNumber) {
+        return firstNumber + (n/2)
+    } else if (n/2 < firstNumber) {
+        return firstNumber - (n/2);
+    } else {
+        return 0;
+    }
+}
