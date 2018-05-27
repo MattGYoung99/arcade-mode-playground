@@ -1,3 +1,5 @@
+// knapsack algorithmn challenge
+
 function knapsackLight(v1, w1, v2, w2, maxW) { 
     let pairs = [[0,0], [v1, w1], [v2, w2], [v1+v2, w1+w2]]; 
     var maxVal = 0; 
