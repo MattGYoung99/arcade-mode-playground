@@ -1,2 +1,2 @@
 # arcade-mode-playground
- compilation algorithmn challenges and problems I solved from various websites
+ compilation algorithmns and problems I solved from various websites
