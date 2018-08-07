@@ -20,6 +20,4 @@
 // Use as few operators as possible for more of a challenge.
 
 
-function bitwiseLogicalNegation(x) {
-	return (!x ? 1 : 0);
-}
+const bitWiseLogicalNotation = (x) => (((x << 32) >> 31) + 1)
