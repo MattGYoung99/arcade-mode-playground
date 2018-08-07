@@ -20,4 +20,4 @@
 // Use as few operators as possible for more of a challenge.
 
 
-const bitWiseLogicalNotation = (x) => (((x << 32) >> 31) + 1)
+const bitWiseLogicalNotation = (x) => (~((x << 32) >> 31) + 1)
