@@ -23,15 +23,15 @@
 
 
 const findShortestWords = (str) => {
-    const allWordLengths = [], shortestWords = [];
-    str = str.split('').filter((item, index, array) => {
+    const regex = /[a-z]+/gi
+    const allWordLengths = [];
+    str = str.split('').filter(item => {
       return item != ',' && item != '.'
     }).join('').split(' ')
     for (var x in str) allWordLengths.push(str[x].length)
-    allWordLengths.sort()
-    for (var k in allWordLengths) if (allWordLengths[k] <= allWordLengths[0]) shortestWords.push(allWordLengths[k]) 
-    return shortestWords
-  }
+    allWordLengths.sort((a,b) => a-b)
+    return str.filter(x => x.length == allWordLengths[0] && x.match(regex)).join(' ').toLowerCase().split(' ').sort()
+}
   
   
   findShortestWords("The quick brown fox jumped over the lazy dogs back.")
