@@ -18,11 +18,10 @@
 
 const indexOfCaps = (str) => {
     const regex = /[A-Z]/g, indexOfAllCaps = [];
-      str = str.split('');
-    for (var x in str) {
-      if (regex.test(str[x])) {
-        indexOfAllCaps.push(parseInt(x))
+    str.split('').map((item, index, array) =>  {
+      if (item.match(regex)) {
+        indexOfAllCaps.push(index)
       }
-    }
+    })
     return indexOfAllCaps;
   }
