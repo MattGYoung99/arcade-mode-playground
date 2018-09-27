@@ -5,7 +5,6 @@
 // than the second occurrence of the other number does. If there are no such elements, return -1.
 // Obeying the o(1) memory constraint
 
-
 const firstDuplicate = (a) => {
     let first = {}
     for (var i of a) {
